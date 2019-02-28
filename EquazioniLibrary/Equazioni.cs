@@ -19,13 +19,16 @@ namespace EquazioniLibrary
 
             return uscita;
         }
-        public static bool IsInconsisted(double num1)
+        public static bool IsInconsisted(double num1 ,double num2)
         {
             bool ritorno = false;
 
             if (num1 == 0)
             {
-                ritorno = true;
+                if (num2 != 0)
+                {
+                    ritorno = true;
+                }
             }
 
             return ritorno;
