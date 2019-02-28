@@ -66,6 +66,27 @@ namespace EquazioniLibrary.Test
         }
 
 
+        [TestMethod]
+        public void TestIsdegree1()
+        {
+            double n1 = 0; bool risultato = false;
+            bool risultato2 = EquazioniLibrary.Equazioni.IsDegree2(n1);
+            Assert.AreEqual(risultato, risultato2);
+        }
+        [TestMethod]
+        public void TestIsdegree2()
+        {
+            double n1 = -1; bool risultato = true;
+            bool risultato2 = EquazioniLibrary.Equazioni.IsDegree2(n1);
+            Assert.AreEqual(risultato, risultato2);
+        }
+        [TestMethod]
+        public void TestIsdegree3()
+        {
+            double n1 = 1; bool risultato = true;
+            bool risultato2 = EquazioniLibrary.Equazioni.IsDegree2(n1);
+            Assert.AreEqual(risultato, risultato2);
+        }
 
     }
 }

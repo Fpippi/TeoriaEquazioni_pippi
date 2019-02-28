@@ -33,5 +33,16 @@ namespace EquazioniLibrary
 
             return ritorno;
         }
+        public static bool IsDegree2(double num1)
+        {
+            bool ritorno = true;
+
+            if (num1 == 0)
+            {
+                ritorno = false;
+            }
+
+            return ritorno;
+        }
     }
 }
