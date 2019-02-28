@@ -88,5 +88,30 @@ namespace EquazioniLibrary.Test
             Assert.AreEqual(risultato, risultato2);
         }
 
+
+        [TestMethod]
+        public void Delta()
+        {
+            double n1 = 1, num2 = 1, num3 = 1; double risultato = -3;
+            double risultato2 = EquazioniLibrary.Equazioni.Delta(n1,num2,num3);
+            Assert.AreEqual(risultato, risultato2);
+        }
+        [TestMethod]
+        public void Delta2()
+        {
+            double n1 = 1, num2 = 1, num3 = 0; double risultato = 1;
+            double risultato2 = EquazioniLibrary.Equazioni.Delta(n1, num2, num3);
+            Assert.AreEqual(risultato, risultato2);
+        }
+        [TestMethod]
+        public void Delta3()
+        {
+            double n1 = 0, num2 = 1, num3 = 1; double risultato = 1;
+            double risultato2 = EquazioniLibrary.Equazioni.Delta(n1, num2, num3);
+            Assert.AreEqual(risultato, risultato2);
+        }
+
+
+
     }
 }
