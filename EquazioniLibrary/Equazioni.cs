@@ -49,5 +49,27 @@ namespace EquazioniLibrary
         {
             return (num2 * num2) - (4 * num1 * num3);
         }
+
+        public static string EquationDegree1(double num1,double num2)
+        {
+            string ritorno = "";
+
+            if (IsInconsisted(num1,num2))
+            {
+                ritorno = "è indeterminata";
+            }else if (IsDetermined(num1))
+            {
+                ritorno = "impossibile";
+            }
+            else
+            {
+                double calcolo= ((-num2) / num1);
+                ritorno = Convert.ToString(calcolo);
+            }
+                
+            return ritorno;
+        }
+        
+        
     }
 }

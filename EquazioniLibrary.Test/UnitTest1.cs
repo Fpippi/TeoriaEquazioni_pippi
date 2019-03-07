@@ -119,6 +119,14 @@ namespace EquazioniLibrary.Test
         }
 
 
+        [TestMethod]
+        public void EquationDegree1()
+        {
+            double n1 = 0, num2 = 0; string risultato = "indeterminata";
+            string risultato2 = EquazioniLibrary.Equazioni.EquationDegree1(n1, num2);
+            Assert.AreEqual(risultato, risultato2);
+        }
+
 
 
     }
