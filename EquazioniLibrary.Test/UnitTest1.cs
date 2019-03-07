@@ -32,21 +32,21 @@ namespace EquazioniLibrary.Test
         [TestMethod]
         public void TestIsconsisted1()
         {
-            double n1 = 0, num2 = 0; bool risultato = false;
+            double n1 = 0, num2 = 0; bool risultato = true;
             bool risultato2 = EquazioniLibrary.Equazioni.IsInconsisted(n1,num2);
             Assert.AreEqual(risultato, risultato2);
         }
         [TestMethod]
         public void TestIsconsisted2()
         {
-            double n1 = 0, num2 = 1; bool risultato = true;
+            double n1 = 0, num2 = 1; bool risultato = false;
             bool risultato2 = EquazioniLibrary.Equazioni.IsInconsisted(n1, num2);
             Assert.AreEqual(risultato, risultato2);
         }
         [TestMethod]
         public void TestIsconsisted3()
         {
-            double n1 = 0, num2 = -1; bool risultato = true;
+            double n1 = 0, num2 = -1; bool risultato = false;
             bool risultato2 = EquazioniLibrary.Equazioni.IsInconsisted(n1, num2);
             Assert.AreEqual(risultato, risultato2);
         }
@@ -120,13 +120,26 @@ namespace EquazioniLibrary.Test
 
 
         [TestMethod]
-        public void EquationDegree1()
+        public void EquationDegree11()
         {
             double n1 = 0, num2 = 0; string risultato = "indeterminata";
             string risultato2 = EquazioniLibrary.Equazioni.EquationDegree1(n1, num2);
             Assert.AreEqual(risultato, risultato2);
         }
-
+        [TestMethod]
+        public void EquationDegree12()
+        {
+            double n1 = 0, num2 = 4; string risultato = "impossibile";
+            string risultato2 = EquazioniLibrary.Equazioni.EquationDegree1(n1, num2);
+            Assert.AreEqual(risultato, risultato2);
+        }
+        [TestMethod]
+        public void EquationDegree13()
+        {
+            double n1 = 2, num2 = -4; string risultato = "2";
+            string risultato2 = EquazioniLibrary.Equazioni.EquationDegree1(n1, num2);
+            Assert.AreEqual(risultato, risultato2);
+        }
 
 
     }

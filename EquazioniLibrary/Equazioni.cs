@@ -25,7 +25,7 @@ namespace EquazioniLibrary
 
             if (num1 == 0)
             {
-                if (num2 != 0)
+                if (num2 == 0)
                 {
                     ritorno = true;
                 }
@@ -56,14 +56,14 @@ namespace EquazioniLibrary
 
             if (IsInconsisted(num1,num2))
             {
-                ritorno = "è indeterminata";
-            }else if (IsDetermined(num1))
+                ritorno = "indeterminata";
+            }else if (!IsDetermined(num1))
             {
                 ritorno = "impossibile";
             }
             else
             {
-                double calcolo= ((-num2) / num1);
+                double calcolo= (-num2 / num1);
                 ritorno = Convert.ToString(calcolo);
             }
                 
