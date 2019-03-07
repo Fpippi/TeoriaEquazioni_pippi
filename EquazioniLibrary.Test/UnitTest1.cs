@@ -110,6 +110,14 @@ namespace EquazioniLibrary.Test
             double risultato2 = EquazioniLibrary.Equazioni.Delta(n1, num2, num3);
             Assert.AreEqual(risultato, risultato2);
         }
+        [TestMethod]
+        public void Delta4()
+        {
+            double n1 = 0, num2 = 0, num3 = 0; double risultato = 0;
+            double risultato2 = EquazioniLibrary.Equazioni.Delta(n1, num2, num3);
+            Assert.AreEqual(risultato, risultato2);
+        }
+
 
 
 
