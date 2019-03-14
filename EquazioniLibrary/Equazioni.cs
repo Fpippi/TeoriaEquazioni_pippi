@@ -66,7 +66,8 @@ namespace EquazioniLibrary
                 double calcolo= (-num2 / num1);
                 ritorno = Convert.ToString(calcolo);
             }
-                
+               
+            
             return ritorno;
         }
         
