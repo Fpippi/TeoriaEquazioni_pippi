@@ -1,0 +1,4 @@
+﻿[14/03/2019 09:52:10 Informational] ------ Run test started ------
+[14/03/2019 09:52:11 Informational] ========== Run test finished: 0 run (0:00:00,9760976) ==========
+[14/03/2019 09:52:40 Informational] ------ Run test started ------
+[14/03/2019 09:52:41 Informational] ========== Run test finished: 18 run (0:00:00,9070187) ==========

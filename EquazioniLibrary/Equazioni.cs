@@ -52,23 +52,23 @@ namespace EquazioniLibrary
 
         public static string EquationDegree1(double num1,double num2)
         {
-            string ritorno = "";
+            
 
             if (IsInconsisted(num1,num2))
             {
-                ritorno = "indeterminata";
+                 return "indeterminata";
             }else if (!IsDetermined(num1))
             {
-                ritorno = "impossibile";
+                return  "impossibile";
             }
             else
             {
                 double calcolo= (-num2 / num1);
-                ritorno = Convert.ToString(calcolo);
+                 return Convert.ToString(calcolo);
             }
                
             
-            return ritorno;
+            
         }
         
         

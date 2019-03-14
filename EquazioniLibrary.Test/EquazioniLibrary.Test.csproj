@@ -56,6 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\EquazioniLibrary\EquazioniLibrary.csproj">
       <Project>{2c86d250-40b2-4b21-84c3-3cc20029c201}</Project>
       <Name>EquazioniLibrary</Name>
